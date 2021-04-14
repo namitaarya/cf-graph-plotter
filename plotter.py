@@ -28,9 +28,11 @@ def makegraph():
             ls3.append(i["newRating"])
 
        # plt.scatter(ls3,ls1)
-        plt.plot(ls3,ls1)
+        plt.plot(ls3,ls1,label=userid)
         plt.xlabel("RANK")
         plt.ylabel("CONTESTID")
+        plt.title(label="GRAPH(S)",fontsize=30, color="red")
+        plt.legend()
         
 def showgraph():
     plt.show()
